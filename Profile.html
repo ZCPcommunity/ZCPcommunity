@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль ZCP</title>
+  <style>
+    body {
+      background-image: url("https://kartinki.pics/uploads/posts/2021-07/1626194497_9-kartinkin-com-p-stilnii-chernii-fon-krasivo-9.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .profile-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      position: relative;
+      top: -15px;
+      background-color: #282828;
+      border-radius: 5px;
+      padding: 10px 20px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .user-name {
+      font-size: 1.3rem;
+      margin-right: 10px;
+    }
+
+    .profile-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-bottom: 15px;
+    }
+
+    .data-item {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+
+    .data-value {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    #hashtag {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background-color: #282828;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .zcp-community {
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: #282828;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .zcp-community span {
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+
+    /* Стиль для панели */
+    .bottom-panel {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #282828;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      z-index: 10; /* Чтобы панель была поверх контента */
+    }
+
+    .panel-icon {
+      width: 40px;
+      height: 40px;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/6463/6463383.png"); /* Новая иконка */
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 15px;
+      }
+      .profile-title {
+        font-size: 1.8rem;
+      }
+      .user-name {
+        font-size: 1.1rem;
+      }
+      .data-value {
+        font-size: 0.9rem;
+      }
+      .zcp-community {
+        font-size: 1rem;
+      }
+      .zcp-community span {
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="zcp-community">ZCP<span>community</span></div> 
+    <div class="profile-title">PROFILE</div>
+    <div class="user-info">
+      <span class="user-name">Exyld</span>
+    </div>
+
+    <div class="profile-data">
+      <div class="data-item">
+        <span class="data-value">100.000</span>
+        <span>Профитов</span>
+      </div>
+      <div class="data-item">
+        <span class="data-value">184</span>
+        <span>Дней</span>
+      </div>
+      <div class="data-item">
+        <span class="data-value">0</span>
+        <span>Профитов</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="hashtag">#конкурс</div>
+
+  <div class="bottom-panel">
+    <a href="https://telegra.ph/Baza---Scammers-10-10" target="_blank">
+      <div class="panel-icon"></div> 
+    </a>
+  </div>
+
+  <script>
+    // Замените "ваш_телеграм_ссылка" на реальную ссылку
+    const telegramLink "https://telegra.ph/Baza---Scammers-10-10"; 
+
+    const panelIcon = document.querySelector(".panel-icon");
+    panelIcon.addEventListener("click", () => {
+      window.open(telegramLink, "_blank");
+    });
+  </script>
+</body>
+</html>
